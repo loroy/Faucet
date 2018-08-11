@@ -11,7 +11,7 @@
     if ($('#countdown').length) { 
         $('#countdown').countdown({
             render: function(data) {
-                if (data.years <= 1) {
+                if (data.years >= 1) {
                     var $days = (data.years*365)+data.days;
                 } else {
                     var $days = data.days;
